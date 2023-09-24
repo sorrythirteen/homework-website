@@ -169,6 +169,7 @@ buttons {
   position: fixed;
   bottom: 0;
   width: 100%;
+  height: 10%;
 }
 
 #footer a {
@@ -182,3 +183,23 @@ buttons {
   padding: 30px;
 }
 
+.mediacontent {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.mediacontent img, .mediacontent iframe {
+  height: 315px; /* здесь вы можете установить нужную высоту */
+  max-width: 100%; /* здесь вы можете установить максимальную ширину в процентах */
+  margin: 0px;
+}
+
+@media (max-width: 767px) {
+  .mediacontent {
+    max-width: auto;
+    height: auto;
+  }
+}
