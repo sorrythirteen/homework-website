@@ -172,3 +172,16 @@ buttons {
   color: #fff;
   text-decoration: underline;
 }
+
+img {
+  max-width: 100%;
+  height: auto;
+  width: auto\9; /* ie8 */
+}
+
+.video embed,
+.video object,
+.video iframe {
+   width: 100%;
+   height: auto;
+}
