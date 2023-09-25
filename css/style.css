@@ -95,6 +95,7 @@ buttons {
   body.hide-sidedrawer #footer {
     margin-left: 0;
   }
+
 }
 
 
@@ -183,23 +184,14 @@ buttons {
   padding: 30px;
 }
 
-.mediacontent {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
+#mediacontent img {
+  max-width: 100%;
+  height: auto;
 }
 
-.mediacontent img, .mediacontent iframe {
-  height: 315px; /* здесь вы можете установить нужную высоту */
-  max-width: 100%; /* здесь вы можете установить максимальную ширину в процентах */
-  margin: 0px;
-}
-
-@media (max-width: 767px) {
-  .mediacontent {
-    max-width: auto;
-    height: auto;
-  }
+#mediacontent iframe {
+  width: 560px;
+  height: 315px;
+  max-width: 100%;
+  max-height: 100%;
 }
